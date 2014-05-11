@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ffd-JY-dww">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="IIC-0W-FAW">
+            <objects>
+                <viewController id="zkO-SQ-NK8" customClass="FAELoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qtp-Pg-nxS"/>
+                        <viewControllerLayoutGuide type="bottom" id="BY1-jx-Rfp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2q3-Ea-gJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gO0-Op-vud" customClass="FBLoginView">
+                                <rect key="frame" x="43" y="363" width="235" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="Ttj-K6-6c7"/>
+                                    <constraint firstAttribute="height" constant="45" id="wr1-a1-CLf"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_default_tn.png" translatesAutoresizingMaskIntoConstraints="NO" id="NNd-S1-zsR">
+                                <rect key="frame" x="60" y="90" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Blj-y9-vGw"/>
+                                    <constraint firstAttribute="height" constant="200" id="OOX-Gv-h6Y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BY1-jx-Rfp" firstAttribute="top" secondItem="gO0-Op-vud" secondAttribute="bottom" constant="160" id="0Sn-xt-x9s"/>
+                            <constraint firstItem="NNd-S1-zsR" firstAttribute="leading" secondItem="2q3-Ea-gJQ" secondAttribute="leading" constant="60" id="Ebm-fm-uYy"/>
+                            <constraint firstAttribute="trailing" secondItem="gO0-Op-vud" secondAttribute="trailing" constant="42" id="Syu-Av-zPW"/>
+                            <constraint firstItem="NNd-S1-zsR" firstAttribute="top" secondItem="qtp-Pg-nxS" secondAttribute="bottom" constant="46" id="tlH-bF-wQG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hE1-hE-smT">
+                        <barButtonItem key="rightBarButtonItem" id="duZ-EU-2YN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mjy-Oc-xWG">
+                                <rect key="frame" x="258" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="SegueIDToAlbumVC" id="BiI-oO-er6"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="NNd-S1-zsR" id="evb-6X-4TO"/>
+                        <outlet property="loginView" destination="gO0-Op-vud" id="Eln-L4-Oko"/>
+                        <outlet property="startButton" destination="mjy-Oc-xWG" id="nGv-E7-pyS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNW-by-S2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="-166"/>
+        </scene>
+        <!--Album View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="FacebookAlbumVC" id="vXZ-lx-hvc" userLabel="Album View Controller" customClass="FAEAlbumViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9NR-4n-oj7"/>
+                        <viewControllerLayoutGuide type="bottom" id="B9r-fU-xwE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vmM-sG-ANs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FGm-1Y-DIC">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FbAlbumCollectionCellID" id="03a-e0-l7q" customClass="FbAlbumCollectionCell">
+                                        <rect key="frame" x="0.0" y="44" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BJ-EP-CI6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iV-bG-wsN">
+                                                    <rect key="frame" x="0.0" y="72" width="100" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="collectionCellLabel" destination="6iV-bG-wsN" id="HEG-7Z-uEQ"/>
+                                            <outlet property="imageView" destination="9BJ-EP-CI6" id="rIv-uL-7r3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="40L-qG-iK0"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="6UG-qF-AEg"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vmM-sG-ANs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="EXl-Fw-0QA"/>
+                            <constraint firstAttribute="trailing" secondItem="vmM-sG-ANs" secondAttribute="trailing" id="PGe-Ro-upR"/>
+                            <constraint firstItem="vmM-sG-ANs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="VYL-lL-wgY"/>
+                            <constraint firstItem="B9r-fU-xwE" firstAttribute="top" secondItem="vmM-sG-ANs" secondAttribute="bottom" id="zqo-mN-xHF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yS7-AV-ZyF">
+                        <barButtonItem key="leftBarButtonItem" id="6fM-uf-vQd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G0p-aM-Jeb">
+                                <rect key="frame" x="16" y="5" width="60" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nnc-pT-odA"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="fbAlbumCollectionView" destination="vmM-sG-ANs" id="jYf-rn-UQY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653" y="25"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wti-kL-wEs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ffd-JY-dww" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PMP-zo-nlk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zkO-SQ-NK8" kind="relationship" relationship="rootViewController" id="E5k-uO-joJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRj-m6-JTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="-166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook_default_tn.png" width="160" height="160"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

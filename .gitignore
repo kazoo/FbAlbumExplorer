@@ -1,0 +1,18 @@
+# General
+*.o
+*.log
+
+# Mac
+*.DS_Store
+
+# Xcode
+project.xcworkspace/
+xcuserdata/
+build/
+
+# CocoaPods
+Pods/
+
+# Vim
+*~
+*.swp

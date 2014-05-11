@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26BDDF02F74F4425A3142DAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D162B5EB736D436091304DFE /* libPods.a */; };
+		6E6B36A6190CDE9B009A1748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6B36A5190CDE9B009A1748 /* Foundation.framework */; };
+		6E6B36A8190CDE9B009A1748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6B36A7190CDE9B009A1748 /* CoreGraphics.framework */; };
+		6E6B36AA190CDE9B009A1748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6B36A9190CDE9B009A1748 /* UIKit.framework */; };
+		6E6B36B0190CDE9B009A1748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B36AE190CDE9B009A1748 /* InfoPlist.strings */; };
+		6E6B36B2190CDE9B009A1748 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B36B1190CDE9B009A1748 /* main.m */; };
+		6E6B36B6190CDE9B009A1748 /* FAEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B36B5190CDE9B009A1748 /* FAEAppDelegate.m */; };
+		6E6B36B9190CDE9B009A1748 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B36B7190CDE9B009A1748 /* Main_iPhone.storyboard */; };
+		6E6B36BC190CDE9B009A1748 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B36BA190CDE9B009A1748 /* Main_iPad.storyboard */; };
+		6E6B36BF190CDE9B009A1748 /* FAEAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B36BE190CDE9B009A1748 /* FAEAlbumViewController.m */; };
+		6E6B36C1190CDE9B009A1748 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B36C0190CDE9B009A1748 /* Images.xcassets */; };
+		6E6B36C8190CDE9B009A1748 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6B36C7190CDE9B009A1748 /* XCTest.framework */; };
+		6E6B36C9190CDE9B009A1748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6B36A5190CDE9B009A1748 /* Foundation.framework */; };
+		6E6B36CA190CDE9B009A1748 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6B36A9190CDE9B009A1748 /* UIKit.framework */; };
+		6E6B36D2190CDE9B009A1748 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B36D0190CDE9B009A1748 /* InfoPlist.strings */; };
+		6E6B36D4190CDE9B009A1748 /* FbAlbumExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B36D3190CDE9B009A1748 /* FbAlbumExplorerTests.m */; };
+		6E6B36DF190F84E5009A1748 /* FbAlbumCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B36DE190F84E5009A1748 /* FbAlbumCollectionCell.m */; };
+		6E6B36E2190FD5F7009A1748 /* FAELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B36E1190FD5F7009A1748 /* FAELoginViewController.m */; };
+		6E90544D191FACC3000FDEB3 /* facebook_default_tn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E90544C191FACC3000FDEB3 /* facebook_default_tn.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E6B36CB190CDE9B009A1748 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E6B369A190CDE9B009A1748 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E6B36A1190CDE9B009A1748;
+			remoteInfo = FbAlbumExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E6B36A2190CDE9B009A1748 /* FbAlbumExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FbAlbumExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6B36A5190CDE9B009A1748 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E6B36A7190CDE9B009A1748 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E6B36A9190CDE9B009A1748 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E6B36AD190CDE9B009A1748 /* FbAlbumExplorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FbAlbumExplorer-Info.plist"; sourceTree = "<group>"; };
+		6E6B36AF190CDE9B009A1748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E6B36B1190CDE9B009A1748 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E6B36B3190CDE9B009A1748 /* FbAlbumExplorer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FbAlbumExplorer-Prefix.pch"; sourceTree = "<group>"; };
+		6E6B36B4190CDE9B009A1748 /* FAEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAEAppDelegate.h; sourceTree = "<group>"; };
+		6E6B36B5190CDE9B009A1748 /* FAEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAEAppDelegate.m; sourceTree = "<group>"; };
+		6E6B36B8190CDE9B009A1748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6E6B36BB190CDE9B009A1748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6E6B36BD190CDE9B009A1748 /* FAEAlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAEAlbumViewController.h; sourceTree = "<group>"; };
+		6E6B36BE190CDE9B009A1748 /* FAEAlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAEAlbumViewController.m; sourceTree = "<group>"; };
+		6E6B36C0190CDE9B009A1748 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E6B36C6190CDE9B009A1748 /* FbAlbumExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FbAlbumExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6B36C7190CDE9B009A1748 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6E6B36CF190CDE9B009A1748 /* FbAlbumExplorerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FbAlbumExplorerTests-Info.plist"; sourceTree = "<group>"; };
+		6E6B36D1190CDE9B009A1748 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E6B36D3190CDE9B009A1748 /* FbAlbumExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FbAlbumExplorerTests.m; sourceTree = "<group>"; };
+		6E6B36DD190F84E5009A1748 /* FbAlbumCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FbAlbumCollectionCell.h; sourceTree = "<group>"; };
+		6E6B36DE190F84E5009A1748 /* FbAlbumCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FbAlbumCollectionCell.m; sourceTree = "<group>"; };
+		6E6B36E0190FD5F7009A1748 /* FAELoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAELoginViewController.h; sourceTree = "<group>"; };
+		6E6B36E1190FD5F7009A1748 /* FAELoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAELoginViewController.m; sourceTree = "<group>"; };
+		6E90544C191FACC3000FDEB3 /* facebook_default_tn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_default_tn.png; sourceTree = "<group>"; };
+		837A4E947A134266B3E5DCDE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D162B5EB736D436091304DFE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E6B369F190CDE9B009A1748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6B36A8190CDE9B009A1748 /* CoreGraphics.framework in Frameworks */,
+				6E6B36AA190CDE9B009A1748 /* UIKit.framework in Frameworks */,
+				6E6B36A6190CDE9B009A1748 /* Foundation.framework in Frameworks */,
+				26BDDF02F74F4425A3142DAA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6B36C3190CDE9B009A1748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6B36C8190CDE9B009A1748 /* XCTest.framework in Frameworks */,
+				6E6B36CA190CDE9B009A1748 /* UIKit.framework in Frameworks */,
+				6E6B36C9190CDE9B009A1748 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E6B3699190CDE9B009A1748 = {
+			isa = PBXGroup;
+			children = (
+				6E6B36AB190CDE9B009A1748 /* FbAlbumExplorer */,
+				6E6B36CD190CDE9B009A1748 /* FbAlbumExplorerTests */,
+				6E6B36A4190CDE9B009A1748 /* Frameworks */,
+				6E6B36A3190CDE9B009A1748 /* Products */,
+				837A4E947A134266B3E5DCDE /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		6E6B36A3190CDE9B009A1748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E6B36A2190CDE9B009A1748 /* FbAlbumExplorer.app */,
+				6E6B36C6190CDE9B009A1748 /* FbAlbumExplorerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E6B36A4190CDE9B009A1748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E6B36A5190CDE9B009A1748 /* Foundation.framework */,
+				6E6B36A7190CDE9B009A1748 /* CoreGraphics.framework */,
+				6E6B36A9190CDE9B009A1748 /* UIKit.framework */,
+				6E6B36C7190CDE9B009A1748 /* XCTest.framework */,
+				D162B5EB736D436091304DFE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E6B36AB190CDE9B009A1748 /* FbAlbumExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				6E90544B191FACC3000FDEB3 /* resource */,
+				6E6B36B4190CDE9B009A1748 /* FAEAppDelegate.h */,
+				6E6B36B5190CDE9B009A1748 /* FAEAppDelegate.m */,
+				6E6B36BD190CDE9B009A1748 /* FAEAlbumViewController.h */,
+				6E6B36BE190CDE9B009A1748 /* FAEAlbumViewController.m */,
+				6E6B36DD190F84E5009A1748 /* FbAlbumCollectionCell.h */,
+				6E6B36DE190F84E5009A1748 /* FbAlbumCollectionCell.m */,
+				6E6B36E0190FD5F7009A1748 /* FAELoginViewController.h */,
+				6E6B36E1190FD5F7009A1748 /* FAELoginViewController.m */,
+				6E6B36B7190CDE9B009A1748 /* Main_iPhone.storyboard */,
+				6E6B36BA190CDE9B009A1748 /* Main_iPad.storyboard */,
+				6E6B36C0190CDE9B009A1748 /* Images.xcassets */,
+				6E6B36AC190CDE9B009A1748 /* Supporting Files */,
+			);
+			path = FbAlbumExplorer;
+			sourceTree = "<group>";
+		};
+		6E6B36AC190CDE9B009A1748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E6B36AD190CDE9B009A1748 /* FbAlbumExplorer-Info.plist */,
+				6E6B36AE190CDE9B009A1748 /* InfoPlist.strings */,
+				6E6B36B1190CDE9B009A1748 /* main.m */,
+				6E6B36B3190CDE9B009A1748 /* FbAlbumExplorer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E6B36CD190CDE9B009A1748 /* FbAlbumExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E6B36D3190CDE9B009A1748 /* FbAlbumExplorerTests.m */,
+				6E6B36CE190CDE9B009A1748 /* Supporting Files */,
+			);
+			path = FbAlbumExplorerTests;
+			sourceTree = "<group>";
+		};
+		6E6B36CE190CDE9B009A1748 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E6B36CF190CDE9B009A1748 /* FbAlbumExplorerTests-Info.plist */,
+				6E6B36D0190CDE9B009A1748 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E90544B191FACC3000FDEB3 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				6E90544C191FACC3000FDEB3 /* facebook_default_tn.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E6B36A1190CDE9B009A1748 /* FbAlbumExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6B36D7190CDE9B009A1748 /* Build configuration list for PBXNativeTarget "FbAlbumExplorer" */;
+			buildPhases = (
+				B1DE12E18EF545AAAB21D86C /* Check Pods Manifest.lock */,
+				6E6B369E190CDE9B009A1748 /* Sources */,
+				6E6B369F190CDE9B009A1748 /* Frameworks */,
+				6E6B36A0190CDE9B009A1748 /* Resources */,
+				4838664F967E49CB86C71B5B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FbAlbumExplorer;
+			productName = FbAlbumExplorer;
+			productReference = 6E6B36A2190CDE9B009A1748 /* FbAlbumExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E6B36C5190CDE9B009A1748 /* FbAlbumExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E6B36DA190CDE9B009A1748 /* Build configuration list for PBXNativeTarget "FbAlbumExplorerTests" */;
+			buildPhases = (
+				6E6B36C2190CDE9B009A1748 /* Sources */,
+				6E6B36C3190CDE9B009A1748 /* Frameworks */,
+				6E6B36C4190CDE9B009A1748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E6B36CC190CDE9B009A1748 /* PBXTargetDependency */,
+			);
+			name = FbAlbumExplorerTests;
+			productName = FbAlbumExplorerTests;
+			productReference = 6E6B36C6190CDE9B009A1748 /* FbAlbumExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E6B369A190CDE9B009A1748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FAE;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Drowsy Dogs, Inc.";
+				TargetAttributes = {
+					6E6B36C5190CDE9B009A1748 = {
+						TestTargetID = 6E6B36A1190CDE9B009A1748;
+					};
+				};
+			};
+			buildConfigurationList = 6E6B369D190CDE9B009A1748 /* Build configuration list for PBXProject "FbAlbumExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E6B3699190CDE9B009A1748;
+			productRefGroup = 6E6B36A3190CDE9B009A1748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E6B36A1190CDE9B009A1748 /* FbAlbumExplorer */,
+				6E6B36C5190CDE9B009A1748 /* FbAlbumExplorerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E6B36A0190CDE9B009A1748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6B36BC190CDE9B009A1748 /* Main_iPad.storyboard in Resources */,
+				6E90544D191FACC3000FDEB3 /* facebook_default_tn.png in Resources */,
+				6E6B36C1190CDE9B009A1748 /* Images.xcassets in Resources */,
+				6E6B36B9190CDE9B009A1748 /* Main_iPhone.storyboard in Resources */,
+				6E6B36B0190CDE9B009A1748 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6B36C4190CDE9B009A1748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6B36D2190CDE9B009A1748 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4838664F967E49CB86C71B5B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1DE12E18EF545AAAB21D86C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E6B369E190CDE9B009A1748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6B36B2190CDE9B009A1748 /* main.m in Sources */,
+				6E6B36B6190CDE9B009A1748 /* FAEAppDelegate.m in Sources */,
+				6E6B36BF190CDE9B009A1748 /* FAEAlbumViewController.m in Sources */,
+				6E6B36DF190F84E5009A1748 /* FbAlbumCollectionCell.m in Sources */,
+				6E6B36E2190FD5F7009A1748 /* FAELoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E6B36C2190CDE9B009A1748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6B36D4190CDE9B009A1748 /* FbAlbumExplorerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E6B36CC190CDE9B009A1748 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E6B36A1190CDE9B009A1748 /* FbAlbumExplorer */;
+			targetProxy = 6E6B36CB190CDE9B009A1748 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E6B36AE190CDE9B009A1748 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6B36AF190CDE9B009A1748 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E6B36B7190CDE9B009A1748 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6B36B8190CDE9B009A1748 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6E6B36BA190CDE9B009A1748 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6B36BB190CDE9B009A1748 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6E6B36D0190CDE9B009A1748 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E6B36D1190CDE9B009A1748 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E6B36D5190CDE9B009A1748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E6B36D6190CDE9B009A1748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E6B36D8190CDE9B009A1748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837A4E947A134266B3E5DCDE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FbAlbumExplorer/FbAlbumExplorer-Prefix.pch";
+				INFOPLIST_FILE = "FbAlbumExplorer/FbAlbumExplorer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E6B36D9190CDE9B009A1748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837A4E947A134266B3E5DCDE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FbAlbumExplorer/FbAlbumExplorer-Prefix.pch";
+				INFOPLIST_FILE = "FbAlbumExplorer/FbAlbumExplorer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E6B36DB190CDE9B009A1748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FbAlbumExplorer.app/FbAlbumExplorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FbAlbumExplorer/FbAlbumExplorer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FbAlbumExplorerTests/FbAlbumExplorerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6E6B36DC190CDE9B009A1748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FbAlbumExplorer.app/FbAlbumExplorer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FbAlbumExplorer/FbAlbumExplorer-Prefix.pch";
+				INFOPLIST_FILE = "FbAlbumExplorerTests/FbAlbumExplorerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E6B369D190CDE9B009A1748 /* Build configuration list for PBXProject "FbAlbumExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6B36D5190CDE9B009A1748 /* Debug */,
+				6E6B36D6190CDE9B009A1748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E6B36D7190CDE9B009A1748 /* Build configuration list for PBXNativeTarget "FbAlbumExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6B36D8190CDE9B009A1748 /* Debug */,
+				6E6B36D9190CDE9B009A1748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E6B36DA190CDE9B009A1748 /* Build configuration list for PBXNativeTarget "FbAlbumExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6B36DB190CDE9B009A1748 /* Debug */,
+				6E6B36DC190CDE9B009A1748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E6B369A190CDE9B009A1748 /* Project object */;
+}
