@@ -80,12 +80,12 @@ const NSString* GRAPH_PATH_FOR_PHOTOS      = @"/photos?fields=picture,source,nam
                                                      FBErrorCategory category = [FBErrorUtility errorCategoryForError:error];
                                                      NSLog(@"request new permission error -category:%d", (int)category);
                                                  } else {
-                                                     [self sendRequestsWithFbId:nil];
+                                                     [self sendRequestsWithFbId:[NSArray arrayWithObject:GRAPH_PATH_FOR_ME]];
                                                  }
                                              }
              ];
         } else {
-            [self sendRequestsWithFbId:nil];
+            [self sendRequestsWithFbId:[NSArray arrayWithObject:GRAPH_PATH_FOR_ME]];
         }
     } else {
         BOOL loginUI;
@@ -115,7 +115,7 @@ const NSString* GRAPH_PATH_FOR_PHOTOS      = @"/photos?fields=picture,source,nam
     // If the session was opened successfully, start request
     if (!error && (state == FBSessionStateOpen || state == FBSessionStateOpenTokenExtended)){
         NSLog(@"FB session opened");
-        [self sendRequestsWithFbId:nil];
+        [self sendRequestsWithFbId:[NSArray arrayWithObject:GRAPH_PATH_FOR_ME]];
         return;
     }
     
@@ -167,18 +167,7 @@ const NSString* GRAPH_PATH_FOR_PHOTOS      = @"/photos?fields=picture,source,nam
 - (void)sendRequestsWithFbId:(NSArray*)fbids {
     
     if (!fbids) {
-        switch (_mode) {
-            case kFbAccessModeAlbums:
-                fbids = [NSArray arrayWithObject:GRAPH_PATH_FOR_ALBUMS];
-                break;
-            case kFbAccessModePhotos:
-                fbids = [NSArray arrayWithObject:GRAPH_PATH_FOR_PHOTOS];
-                break;
-            case kFbAccessModeFriends:
-            default:
-                fbids = [NSArray arrayWithObject:GRAPH_PATH_FOR_ME];
-                break;
-        }
+        fbids = [NSArray arrayWithObject:GRAPH_PATH_FOR_ME];
     }
     NSLog(@"send request with Fb ID:%@", fbids);
     

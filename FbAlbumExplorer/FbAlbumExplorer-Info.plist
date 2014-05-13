@@ -52,13 +52,13 @@
 	<key>FacebokAppDisplayName</key>
 	<string>ほげほげ</string>
 	<key>FacebookAppID</key>
-	<string>1464279610474139</string>
+	<string></string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1464279610474139</string>
+				<string></string>
 			</array>
 		</dict>
 	</array>
